@@ -1,10 +1,24 @@
 <!DOCTYPE html>
 <html lang="">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>p5.js example</title>
-    <style> body {padding: 0; margin: 0;} </style>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+      }
+      .legend {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        max-width: 200px;
+        font-size: .8rem;
+        color: white;
+      }
+    </style>
     <script src="libs/p5.min.js"></script>
     <script src="libs/p5.dom.min.js"></script>
     <script src="libs/p5.sound.min.js"></script>
@@ -14,5 +28,13 @@
     <script src="radioButtons.js"></script>
   </head>
   <body>
+    <ul class="legend">
+      <li>Las imágenes corresponden a datos tomados por Instituto Meteorológico Nacional entre los años 2007-2017, las fechas varían entre cada estación. Para más información puede acceder a 
+        <a href="https://www.researchgate.net/publication/336197377_Caracteristicas_del_recurso_eolico_en_Costa_Rica">este documento</a>
+        o consultar al correo 
+        <a href="mailto:grichmond@tec.ac.cr">grichmond@tec.ac.cr</a>.
+      </li>
+      <li>Favor esperar como máximo 1 minuto para que todas que las imágenes se carguen adecuadamente. Después de transcurrido ese tiempo, en caso de que no se hayan cargado en su totalidad, intente refrescando la página.</li>
+    </ul>
   </body>
 </html>
